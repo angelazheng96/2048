@@ -32,4 +32,32 @@
     • Realized the ewindow needs to be resized manually because it doesn't start off big enough to show the entire JFrame  
 • [Removed focus border from JButtons](https://stackoverflow.com/questions/9361658/disable-jbutton-focus-border)  
 • Added the back button (to leave and go back to the main menu) and the restart button (to restart the game)  
-    • Had some problems with [deleting the JPanels of the existing Blocks](https://stackoverflow.com/questions/11438512/fully-remove-jlabel-from-jpanel-not-setvisiblefalse)  
+    • Had some problems with [deleting the JPanels of the existing Blocks](https://stackoverflow.com/questions/11438512/fully-remove-jlabel-from-jpanel-not-setvisiblefalse)
+• Added temporary arrow buttons (will add keyboard input in the future)  
+
+## Friday, January 13, 2023
+• Started working on moving the Blocks (combineBlocks, deleteBlock, moveBlock)  
+• The game is now "playable" - Blocks move around on the screen & combine correctly  
+• If the Blocks were moved, it generates a new random Block  
+
+## Monday, January 16, 2023
+• Added colour palettes (classic block colours & pastel)  
+• Score changes when blocks are combined  
+• High score is stored in highscore.txt  
+
+## Tuesday, January 17, 2023
+• Added more colour palettes (rainbow, winter, nature)  
+• Added Settings.java - user can change the colour palette  
+• Changing board size - user can choose between 3x3 or 4x4 board  
+
+## Wednesday, January 18, 2023
+• Added KeyListener (using arrow keys to control the game)  
+• Game ends when the board is full and no more moves are possible  
+    • Shows a JOptionPane message  
+• Game also ends when the user "wins" by reaching the [maximum block value of 2^17]([url](https://www.quora.com/What-is-your-highest-tile-in-2048)https://www.quora.com/What-is-your-highest-tile-in-2048)  
+
+## Thursday, January 19, 2023
+• Finalized code (reordered some methods to make more sense, got rid of print statements from testing, etc.)  
+• Shows a popup message when the user creates a 2048 Block as well as the maximum block value of 2^17  
+• Fixed a small issue: when the user lost and no more moves were possible, they had to press an arrow key again for the popup to show  
+    • Now it shows the popup right away
